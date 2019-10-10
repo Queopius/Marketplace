@@ -49,3 +49,6 @@ Para realizar el login es mister que la Api contenga la KEY proporcionada de for
 
 ## Credits
  - Laravel Framework - Taylor Otwell 
+ 
+## License
+ - 
