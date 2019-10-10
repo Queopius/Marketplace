@@ -1,10 +1,10 @@
-#API RestFul
+## API RestFul
 
-## Introduction
+## Introducción
 
 >Esta ApiRestful es el resultado de un estudo del Framework Laravel y muchos de sus paquetes. Una aplicación bastante completa que dejo a la disposición de todos los que quieran empezar un proyecto con un recogido ya realizado. 
 
-## Code Samples
+## Fragmento
 
 
 >Un pequeño fragmento del Policies en UserController;
@@ -15,9 +15,9 @@
 
 
 
-## Installation
+## Instalación
 
->Recomendaciones*:
+>#Recomendaciones*:
 - Utilización del Laragon como servidor local (link de la página oficial https://laragon.org/download/), pero también pueden utilizar servidores como Xampp o Wamp.
 
 1. **Proyecto**; Copie el proyecto con Git o descarga lo en tu ordenador y en el caso de que estés utilizando Laragon, llevártelo a la carpeta c:\laragon\wwww\'aqui' y click en **Recargar**, que está en el panel de control de Laragon. Hecho esto Laragon se encargará de preparar una url.
