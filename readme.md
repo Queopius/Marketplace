@@ -48,4 +48,7 @@ Para realizar el login es mister que la Api contenga la KEY proporcionada de for
 ## A disfrutar
 
 ## Credits
- - Laravel Framework - Taylor Otwell 
+ - Laravel Framework - Taylor Otwell  
+ 
+## License
+ - GNU General Public License v3.0
