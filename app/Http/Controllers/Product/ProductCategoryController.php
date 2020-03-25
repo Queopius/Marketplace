@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Product;
 
-use App\Product;
-use App\Category;
+use App\Models\Product;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Http\Controllers\ApiController;
 

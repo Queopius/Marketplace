@@ -1,8 +1,8 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
-use App\Product;
+use App\Models\Product;
 use App\Scopes\SellerScope;
 use App\Transformers\SellerTransformer;
 

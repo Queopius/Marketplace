@@ -2,8 +2,8 @@
 
 namespace App\Policies;
 
-use App\User;
-use App\Buyer;
+use App\Models\User;
+use App\Models\Buyer;
 use App\Traits\AdminActions;
 use Illuminate\Auth\Access\HandlesAuthorization;
 

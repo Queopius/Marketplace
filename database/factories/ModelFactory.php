@@ -1,10 +1,10 @@
 <?php
 
-use App\User;
-use App\Seller;
-use App\Product;
-use App\Category;
-use App\Transaction;
+use App\Models\User;
+use App\Models\Seller;
+use App\Models\Product;
+use App\Models\Category;
+use App\Models\Transaction;
 use Illuminate\Support\Str;
 
 /*

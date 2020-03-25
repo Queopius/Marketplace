@@ -1,10 +1,10 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
-use App\Seller;
-use App\Category;
-use App\Transaction;
+use App\Models\Seller;
+use App\Models\Category;
+use App\Models\Transaction;
 use Illuminate\Database\Eloquent\Model;
 use App\Transformers\ProductTransformer;
 use Illuminate\Database\Eloquent\SoftDeletes;

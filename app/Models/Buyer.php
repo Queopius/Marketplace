@@ -1,8 +1,8 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
-use App\Transaction;
+use App\Models\Transaction;
 use App\Scopes\BuyerScope;
 use App\Transformers\BuyerTransformer;
 

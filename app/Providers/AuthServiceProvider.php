@@ -2,12 +2,12 @@
 
 namespace App\Providers;
 
-use App\User;
-use App\Buyer;
-use App\Seller;
-use App\Product;
+use App\Models\User;
+use App\Models\Buyer;
+use App\Models\Seller;
+use App\Models\Product;
 use Carbon\Carbon;
-use App\Transaction;
+use App\Models\Transaction;
 use App\Policies\UserPolicy;
 use App\Policies\BuyerPolicy;
 use App\Policies\SellerPolicy;

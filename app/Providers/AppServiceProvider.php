@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
-use App\User;
-use App\Product;
+use App\Models\User;
+use App\Models\Product;
 use App\Mail\UserCreated;
 use App\Mail\UserMailChanged;
 use Illuminate\Support\Facades\Mail;

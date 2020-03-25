@@ -1,9 +1,9 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
-use App\Buyer;
-use App\Product;
+use App\Models\Buyer;
+use App\Models\Product;
 use Illuminate\Database\Eloquent\Model;
 use App\Transformers\TransactionTransformer;
 use Illuminate\Database\Eloquent\SoftDeletes;

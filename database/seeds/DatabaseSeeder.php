@@ -1,9 +1,9 @@
 <?php
 
-use App\User;
-use App\Product;
-use App\Category;
-use App\Transaction;
+use App\Models\User;
+use App\Models\Product;
+use App\Models\Category;
+use App\Models\Transaction;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -34,18 +34,21 @@ class DatabaseSeeder extends Seeder
         $cantidadProductos = 1000;
         $cantidadTransacciones = 1000;
 
+        $this->call([
+            UsersTableSeeder::class,
+        ]);
 
         factory(User::class, $cantidadUsuarios)->create();
         
-        /**$faker = \Faker\Factory::create();
-        User::create([
+        
+        factory(User::class)->create([
             'name'                         => 'Admin',
             'first_name'                   => $faker->firstName,
             'last_name'                    => $faker->lastName,
             'email'                        => 'admin@admin.com',
             'email_verified_at'            => now(),
             'password'                     => bcrypt('secret'),
-        ]); */
+        ]); 
 
         factory(Category::class, $cantidadCategorias)->create();
 
