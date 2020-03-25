@@ -39,16 +39,6 @@ class DatabaseSeeder extends Seeder
         ]);
 
         factory(User::class, $cantidadUsuarios)->create();
-        
-        
-        factory(User::class)->create([
-            'name'                         => 'Admin',
-            'first_name'                   => $faker->firstName,
-            'last_name'                    => $faker->lastName,
-            'email'                        => 'admin@admin.com',
-            'email_verified_at'            => now(),
-            'password'                     => bcrypt('secret'),
-        ]); 
 
         factory(Category::class, $cantidadCategorias)->create();
 
