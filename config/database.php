@@ -38,11 +38,11 @@ return [
             'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
-        ],
+        ], 
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => env('DB_HOST', 'marketplace-queopius.com'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'api-restful'),
             'username' => env('DB_USERNAME', 'root'),
