@@ -11,10 +11,14 @@ class UsersTableSeeder extends Seeder
      * @return void
      */
     public function run() {
+        $verificado = User::USUARIO_VERIFICADO;
         $user = factory(User::class)->create([
-            'name' => 'Admin',
+            'name' => 'Test',
             'email' => 'admin@admin.com',
             'password' => bcrypt('password'),
+            'verified' => $verificado,
+            'verification_token' => $verificado == User::USUARIO_VERIFICADO ? null : User::generarVerificationToken(),
+            'admin' => User::USUARIO_ADMINISTRADOR,
         ]);
     }
 }
