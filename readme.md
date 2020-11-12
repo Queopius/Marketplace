@@ -1,6 +1,6 @@
 ## API RestFul
 
-[![Latest Stable Version](https://poser.pugx.org/phpunit/phpunit/v)](//packagist.org/packages/phpunit/phpunit) [![Total Downloads](https://poser.pugx.org/phpunit/phpunit/downloads)](//packagist.org/packages/phpunit/phpunit) [![Latest Unstable Version](https://poser.pugx.org/phpunit/phpunit/v/unstable)](//packagist.org/packages/phpunit/phpunit) [![License](https://poser.pugx.org/phpunit/phpunit/license)](//packagist.org/packages/phpunit/phpunit)
+[![Latest Stable Version](https://poser.pugx.org/queopius/marketplace/v)](//packagist.org/packages/queopius/marketplace) [![Total Downloads](https://poser.pugx.org/queopius/marketplace/downloads)](//packagist.org/packages/queopius/marketplace) [![Latest Unstable Version](https://poser.pugx.org/queopius/marketplace/v/unstable)](//packagist.org/packages/queopius/marketplace) [![License](https://poser.pugx.org/queopius/marketplace/license)](//packagist.org/packages/queopius/marketplace)
 
 ## Introducción
 
