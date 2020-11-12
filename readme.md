@@ -1,5 +1,7 @@
 ## API RestFul
 
+[![Latest Stable Version](https://poser.pugx.org/phpunit/phpunit/v)](//packagist.org/packages/phpunit/phpunit) [![Total Downloads](https://poser.pugx.org/phpunit/phpunit/downloads)](//packagist.org/packages/phpunit/phpunit) [![Latest Unstable Version](https://poser.pugx.org/phpunit/phpunit/v/unstable)](//packagist.org/packages/phpunit/phpunit) [![License](https://poser.pugx.org/phpunit/phpunit/license)](//packagist.org/packages/phpunit/phpunit)
+
 ## Introducción
 
 >Esta ApiRestful es el resultado de un estudo del Framework Laravel y muchos de sus paquetes. Una aplicación bastante completa que dejo a la disposición de todos los que quieran empezar un proyecto con un recogido ya realizado. 
