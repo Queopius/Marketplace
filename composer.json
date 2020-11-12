@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "Queopius/Marketplace",
+    "description": "Ease for you.",
+    "keywords": ["framework", "laravel", "marketplace", "api"],
     "license": "MIT",
     "type": "project",
     "require": {
