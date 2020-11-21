@@ -2,13 +2,12 @@
 
 namespace App\Providers;
 
-use App\Models\User;
-use App\Models\Product;
-use App\Mail\UserCreated;
-use App\Mail\UserMailChanged;
+use App\Models\{Product, User};
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
+use App\Mail\{UserCreated, UserMailChanged};
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -42,6 +41,8 @@ class AppServiceProvider extends ServiceProvider
                 $product->save();
             }
         });
+
+        Blade::withoutComponentTags();
     }
 
     /**
