@@ -52,9 +52,8 @@ class UserController extends ApiController
         $this->validate($request, $reglas); 
 
         $campos = $request->all();
-        $campos['password'] = bcrypt($request->password);
-        $campos['verified'] = User::USUARIO_NO_VERIFICADO;
-        $campos['verification_token'] = User::generarVerificationToken();
+        $campos['password'] = $request->password;
+        $campos['email'] = $request->email;
         $campos['admin'] = User::USUARIO_REGULAR;
 
         $usuario = User::create($campos);
@@ -96,13 +95,11 @@ class UserController extends ApiController
         }
 
         if ($request->has('email') && $user->email != $request->email) {
-            $user->verified = User::USUARIO_NO_VERIFICADO;
-            $user->verification_token = User::generarVerificationToken();
             $user->email = $request->email;
         }
 
         if ($request->has('password')) {
-            $user->password = bcrypt($request->password);
+            $user->password = $request->password;
         }
 
         if ($request->has('admin')) {
@@ -146,10 +143,7 @@ class UserController extends ApiController
 
     public function verify($token)
     {
-        $user = User::where('verification_token', $token)->firstOrFail();
-
-        $user->verified = User::USUARIO_VERIFICADO;
-        $user->verification_token = null;
+        $user = User::where('email_verified_at', $token)->firstOrFail();
 
         $user->save();
 

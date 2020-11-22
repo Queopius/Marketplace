@@ -48,6 +48,11 @@ class User extends Authenticatable
         'remember_token',
         'verification_token',
     ];
+
+    public function setPasswordAttribute($password)
+    {
+        $this->attributes['password'] = \Hash::needsRehash($password) ? \Hash::make($password) : $password;
+    }
     
     public function setNameAttribute($valor)
     {
